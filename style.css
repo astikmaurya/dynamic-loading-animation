@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a1d56;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper .loader {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
+  /* gap: 15px; */
+}
+
+.loader .loading {
+  background: #f2f597;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 0 10px;
+  animation: load 0.8s ease infinite;
+}
+
+@keyframes load {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
