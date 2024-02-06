@@ -1,3 +1,5 @@
+/* @auther: "Astik Maurya"; */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  background: #0a1d56;
+  background: #f2f597;
 }
 
 .wrapper {
@@ -23,7 +25,8 @@ body {
 }
 
 .loader .loading {
-  background: #f2f597;
+  display: flex;
+  background: #0a1d56;
   width: 30px;
   height: 30px;
   border-radius: 50px;
@@ -57,4 +60,42 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+.social {
+  height: 8vh;
+  width: 30vw;
+  position: absolute;
+  bottom: 180px;
+  /* right: 44%;
+  left: 44%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+  transition: 0.5s;
+  overflow: visible;
+  /* background: #0a1d56; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social .sci {
+  /* display: grid; */
+  margin: 0 5%;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+}
+.social .sci a {
+  font-size: 2.9vh;
+  gap: 2px;
+}
+.social:hover .content {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+.social:hover .sci {
+  transform: translateY(0px);
+  opacity: 1;
 }
